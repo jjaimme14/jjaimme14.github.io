@@ -1,13 +1,26 @@
 
-<!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Formulario</title>
 </head>
+
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<form action="datos.php" method="get">
+
+<fieldset>
+
+<legend>Ingreso de datos</legend>
+Nombre: <input type="text" name="nombre"><br>
+Contraseña: <input type="password" name="contra"><br>
+
+<input type="submit" value="Enviar">
+<input type="reset" value="Borrar">
+
+</fieldset>
+</form>
+
+<p>Al apretar el botón "Enviar" usted mandará todos los datos a una página llamada "datos.php" la cual procesará toda la información.<br><br> La etiqueta <b>fieldset</b> dibuja un recuadro alrededor del formulario.<br>  La etiqueta <b>legend</b> coloca un título al recuadro. </p>
 
 </body>
-</html>
+</html>	
