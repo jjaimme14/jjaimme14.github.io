@@ -1,84 +1,33 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>DuocSecurity</title>
-	<style type="text/css">
-	body{
-		font-family:Verdana, Geneva, Tahoma, sans-serif;
-		width:700px;
-		margin:0px 50px; 
-		}
-	div.titulo {
-		height:156px;
-		width:100%;
-		background-image:url('familia.jpg');
-		background-repeat:no-repeat;	
-	}
-	li{
-		list-style:none;
-		text-decoration:none;
-	}
-	p {
-	text-align:justify;
-	font:message-box;
-}
-	p.cita{
-	padding-left:50px;
-	background:#CCFFFF;
-	border:thin black solid;
-	font-style:italic;
-}
-	</style>
-</head>
+ <head>
+  <link rel="stylesheet" type="text/css" href="">
+  <link rel="shorcut icon" type="image/x-icon" class="img" href="../imagenes/favicon.ico">
+  <title>Formulario Basico con html y css</title>
+ </head>
 
-<body>
-<div class="titulo"><h1>TITULO</h1></div>
-<hr />
-<table width="100%">
-	<tr>
-		<td width="20%">
-		<div>
-		<ul>
-			<li><a href="www.google.com">Home</a></li>
-			<li><a href="www.google.com">Productos</a></li>
-			<li><a href="www.google.com">Servicios</a></li>
-			<li><a href="www.google.com">Corporativo</a></li>
-			<li><a href="www.google.com">Contáctanos</a></li>
-		</ul>
-		</div>
-		</td>
-		<td width="80%">
-			<h1>cont</h1>
-			<table width="100%">
-			<tr>
-			<td>Nombre</td>
-			<td><input type="text"></td>
-			</tr>
+ <body>
+  <div class="contenedor">
+   <fieldset><legend>Formulario</legend>
+    <form>
+     <!---->
+     <label for="nombre">Nombre:</label>
+     <!---->
+     <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
 
-			<tr>
-			<td>Apellido</td>
-			<td><input type="text"></td>
-			</tr>
+     <label for="email">Email:</label>
 
-			<tr>
-			<td>Email</td>
-			<td><input type="text">@<input type="text"></td>
-			</tr>
-			
-			<tr>
-			<td>Telefono</td>
-			<td><textarea style="width: 312px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">texto opcional</textarea></td>
-			</tr>
-			<tr>
-	<td>Género</td>
-	<td><input type="radio" name="sel" value="Masculino">Masculino<input type="radio" name="sel" value="Femenino">Femenino</td>
-	</tr>
-	<tr><td colspan="100%"><input type="button" value="Enviar" /></td>
-	</tr>
+     <input type="email" id="email" name="email" placeholder="Escribe tu email">
 
-			</table>
-		</td>
-	</tr>
-</table>
-</body>
+     <label for="mensaje">mensaje:</label>
+     <!---->
+     <textarea type="mensaje" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+     <input type="submit" value="Enviar">  
+    </form>
+   </fieldset> 
+  </div> 
+ </body>
 </html>
+
 
